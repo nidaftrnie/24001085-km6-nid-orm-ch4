@@ -12,6 +12,12 @@ module.exports = {
       car_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "cars",
+          },
+          key: "id",
+        },
       },
       model: {
         allowNull: false,
@@ -41,7 +47,6 @@ module.exports = {
         type: Sequelize.DATE,
       },
       deletedAt: {
-        allowNull: false,
         type: Sequelize.DATE,
       },
     });
