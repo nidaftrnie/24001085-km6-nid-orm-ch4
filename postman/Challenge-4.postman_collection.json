@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "c8db94df-d5ee-486a-8adf-298291b326f3",
+		"name": "Challenge-4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33567765"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "Get All Cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cars/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manufacture\": \"Toyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/cars/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cars",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manufacture\": \"Mini Cooper\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cars/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car Models",
+			"item": [
+				{
+					"name": "Get All Car Model",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/carmodels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"carmodels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car Model",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/carmodels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"carmodels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car Model",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"car_id\": \"4\",\r\n    \"model\": \"Mobilio\",\r\n    \"transmission\": \"Manual\",\r\n    \"type\": \"Wagon\",\r\n    \"year\": 2020,\r\n    \"options\": [\r\n      \"CD (Single Disc)\",\r\n      \"Airbag: Passenger\",\r\n      \"A/C: Front\",\r\n      \"Power Locks\",\r\n      \"Navigation\",\r\n      \"Rear Window Defroster\",\r\n      \"Rear Window Defroster\",\r\n      \"MP3 (Single Disc)\",\r\n      \"Airbag: Side\"\r\n    ],\r\n    \"specs\": [\r\n      \"Electric speed-sensitive variable-assist pwr steering\",\r\n      \"Steel side-door impact beams\",\r\n      \"Dual bright exhaust tips\",\r\n      \"Remote fuel lid release\",\r\n      \"Traveler/mini trip computer\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/carmodels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"carmodels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Car Model",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"car_id\": \"4\",\r\n    \"model\": \"Civic\",\r\n    \"transmission\": \"CVT\",\r\n    \"type\": \"Wagon\",\r\n    \"year\": 2015,\r\n    \"options\": [\r\n      \"CD (Single Disc)\",\r\n      \"Airbag: Passenger\",\r\n      \"A/C: Front\",\r\n      \"Power Locks\",\r\n      \"Navigation\",\r\n      \"Rear Window Defroster\",\r\n      \"Rear Window Defroster\",\r\n      \"MP3 (Single Disc)\",\r\n      \"Airbag: Side\"\r\n    ],\r\n    \"specs\": [\r\n      \"Electric speed-sensitive variable-assist pwr steering\",\r\n      \"Steel side-door impact beams\",\r\n      \"Dual bright exhaust tips\",\r\n      \"Remote fuel lid release\",\r\n      \"Traveler/mini trip computer\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/carmodels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"carmodels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car Model",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/carmodels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"carmodels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car Details",
+			"item": [
+				{
+					"name": "Get All Car Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cardetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cardetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cardetails/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cardetails",
+								"4"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car Detail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_model_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "SBD-1209",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/NIDA/COLLEGE/KM Binar/Challenge/Challenge-3/public/images/car03.min.jpg",
+									"disabled": true
+								},
+								{
+									"key": "rentPerDay",
+									"value": "40000",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "available",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/cardetails/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cardetails",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Car Detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_model_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "plate",
+									"value": "DBH-3491",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/NIDA/COLLEGE/KM Binar/Challenge/Challenge-3/public/images/car01.min.jpg"
+								},
+								{
+									"key": "rentPerDay",
+									"value": "200000",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "available",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7000/cardetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cardetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car Detail",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/cardetails/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"cardetails",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
